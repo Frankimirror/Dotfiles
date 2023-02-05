@@ -4,12 +4,11 @@
  
 # terminal emulator
 super + Return
-    gnome-terminal
+    xfce4-terminal
 
 # sacar captura pantalla
-super + alt + o
-    ksnip
-     
+super + Print
+    flameshot gui     
  
 # program launcher
 super + d
