@@ -23,7 +23,7 @@ bspc rule -a Screenkey manage=off
 ##################
 ### Wallpaper ###
 ################
-feh --bg-fill /home/francmirror/Pictures/wallpaper/arch.jpg
+feh --bg-fill /home/francmirror/Pictures/wallpaper/space.jpg
 ~/.config/polybar/./launch.sh
 pkill picom
 picom -f --daemon --config "${HOME}/.config/picom/picom.conf" &

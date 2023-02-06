@@ -7,8 +7,8 @@ super + Return
     xfce4-terminal
 
 # sacar captura pantalla
-super + Print
-    flameshot gui     
+#super + Print
+#    flameshot gui     
  
 # program launcher
 super + d
@@ -17,10 +17,32 @@ super + d
 # make sxhkd reload its configuration files:
 super + Escape
     pkill -USR1 -x sxhkd
+
+
+#---------BRIGHTNESS AND VOLUME------------#
+
+# BRIGHTNESS CONTROL
+XF86MonBrightnessUp
+	brightnessctl set +10%
+
+XF86MonBrightnessDown
+	brightnessctl set 10%-
+
+XF86AudioRaiseVolume
+    pactl set-sink-volume 0 +5%
+XF86AudioLowerVolume
+    pactl set-sink-volume 0 -5%
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
+
+
+# Music control
+XF86Audio(Next,Prev,Play,Stop)
+	rpc {next,prev,toggle,stop}
  
-#
+
 # bspwm hotkeys
-#
+
  
 # quit/restart bspwm
 super + alt + {q,r}
